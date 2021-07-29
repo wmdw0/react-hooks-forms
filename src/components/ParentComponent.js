@@ -15,10 +15,11 @@ function ParentComponent() {
   return (
     <div>
       <Form 
+      firstName={firstName} 
+      lastName={lastName}
       handleFirstNameChange={handleFirstNameChange} 
       handleLastNameChange={handleLastNameChange} 
-      firstName={firstName} 
-      lastName={lastName}/>
+      />
     <DisplayData firstName={firstName} lastName={lastName} />
     </div>
   );
